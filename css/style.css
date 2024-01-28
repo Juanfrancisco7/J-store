@@ -1,0 +1,1139 @@
+@font-face {
+  font-family: 'Lato';
+  src: 	url('../fonts/Lato-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: 	url('../fonts/Titillium-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium-Bold';
+	src: url('../fonts/Titillium-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Titillium-Light';
+	src: url('../fonts/Titillium-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Titillium-Thin';
+	src: url('../fonts/Titillium-Thin.otf') format('opentype');
+}
+
+.mt-6 {
+	margin-top: 6%;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mb-14 {
+	margin-bottom: 14%;
+}
+
+.mb-4 {
+	margin-bottom: 4%;
+}
+
+.mr-4 {
+	margin-right: 5%;
+}
+
+.ml-4 {
+	margin-left: 5%;
+}
+
+.mt-5 {
+	margin-top: 5%;
+}
+
+.p-0 {
+	padding: 0;
+}
+
+/*
+*			Nav Search
+*/
+.nav.navbar-nav {
+	padding-left: 4.5%;
+	padding-right: 4.5%;
+}
+
+.nav-roperito {
+	font-family: 'Titillium';
+	background: #464346; /* Gris */
+	color: white !important;
+	padding: 10px;
+}
+
+
+/*
+* User logued
+*/
+
+.user-logued {
+	margin-top: 0;
+}
+
+.user-logued .avatar {
+	max-width: 60px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.shop .conten .badge {
+	position: absolute;
+	right: 35%;
+	background: #f8436e;
+}
+
+
+.infor .shop {
+	border-bottom: 0;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.infor .price {
+	color: #f8436e;
+}
+
+.infor .profile {
+	border-radius: 50%;
+	background: 
+}
+
+.infor .dropdown-menu a {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.infor .dropdown-menu li {
+	border-bottom: 1px solid #eee;
+}
+
+.logued .profile img {
+	max-width: 50px;
+}
+
+.dropdown-menu hr {
+ 	margin-top: 5px;
+ 	margin-bottom: 5px;
+ 	border-top: 1px solid #eee;
+}
+
+.logued .dropdown-menu > li > a {
+	font-family: 'Titillium-Light';
+	font-size: 14px;
+}
+
+.infor .dropdown-menu {
+	border-radius: 0;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    top: 130% !important;
+    left: -78px !important;
+}
+
+.logued .username {
+	font-family: 'Titillium-Bold';
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+.logued .price {
+	font-family: 'Titillium-Light';
+	font-size: 13px;
+	text-align: left;
+	margin-left: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+ .nav-categories .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.nav-categorias ul.dropdown-menu li a {
+	color: black !important;
+}
+
+.input-search {
+	display: flex;
+	border: 1px solid #f8436e; /*Fuscia*/
+	align-items: center;
+	border-radius: 25px;
+}
+
+.input-search input {
+	font-family: 'Titillium-Thin' !important;
+	background: #464346;
+	color: white;
+	border: none;
+	border-radius: 30px;
+}
+
+.input-search input:focus {
+	box-shadow: none;
+}
+
+.icon-search {
+	background: #f8436e;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.icon-search img {
+	margin: 5px;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;	
+}
+
+.links a {
+	font-family: 'Titillium-Thin';
+	color: white;
+	font-size: 13px !important;
+}
+
+.links img {
+	display: inline-block;
+}
+
+.btn-sale {
+	font-family: 'Lato-Light';
+	background: white;
+	color: #ea6464 !important;
+	border: 1px solid #ea6464;
+	border-radius: 12px;
+	padding: 5px 20px;
+}
+
+/*
+*		Navbar
+*/
+
+.navbar {
+	font-family: 'Titillium-Thin';
+	font-size: 16px;
+	margin-bottom: 0;
+	border: none;
+	background: white;
+	font-weight: 100;
+	border-radius: 0;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;  
+}
+
+.navbar-nav.navtop > li {
+  float: none;
+  display: inline-block;
+}
+
+.pr-4 {
+	padding-right: 4%;
+}
+
+.envio a {
+	padding-bottom: 0 !important; 
+	padding-top: 10px !important;
+}
+
+.whatsapp {
+	padding-top: 4px;
+	margin-left: 10%;
+}
+
+.btn-like {
+	font-family: 'Arial' !important;
+	font-size: 10px;
+	font-weight: bold;
+	color: white !important;
+	background: blue;
+	padding: 1px 3px !important;
+	margin-top: 15px;
+}
+
+.btn-like:hover {
+	background: blue !important;
+	color: white !important;
+}
+
+/*
+*	Navbar categorias
+*/
+
+.nav-categories {
+	background: #f8436e;
+}
+
+.nav-categories li a {
+	color: white !important;
+}
+
+.nav.categorias > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #f51c50 !important;
+}
+
+
+.nav-categories .dropdown .dropdown-menu li a {
+	color: black !important;
+}
+
+
+/*
+*		Slide
+*/
+
+.item img {
+	width: 100%;
+}
+
+.title-slide {
+	font-family: 'Lato-Light' !important;
+	margin-left: 70px;
+	font-size: 80px;
+	line-height: 95px;
+	position: absolute;
+	z-index: 1 !important;
+	top: 70px;
+}
+
+.firts-text {
+	display: block;
+}
+
+.desc {
+	font-weight: bold;
+	color: #f8436e;
+}
+
+/*
+*		Products
+*/
+
+.text-msg {
+	font-family: 'Titillium-Light';
+	font-size: 21px;
+	margin-top: 8vh;
+}
+
+
+.filters .col-md-2 {
+	padding: 0 5px !important;
+}
+
+.filters select {
+	font-family: 'Lato-Light';
+	border-radius: 0;
+	font-size: 16px;
+	border: 0.2px solid #dcd8d8;
+}
+
+/*
+*		Card Products
+*/
+
+.products .col-md-4, .products .col-sm-4, .products .col-lg-3 {	
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+.card {
+	border: 1px solid #dcd8d8;
+	padding: 2px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.mark {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	background: #464346;
+	color: white;
+	padding: 0 10%;
+	font-family: 'Titillium' !important;
+	font-size: 16px;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.card-title {
+	font-family: 'Titillium-Bold';
+	font-size: 21px;
+}
+
+.talla {
+	font-family: 'Titillium-Thin';
+	font-size: 15px;
+}
+
+.price .troke {
+	font-family: 'Titillium-Thin';
+	font-size: 22px;
+	text-decoration: line-through;
+}
+
+.price .real {
+	font-family: 'Titillium';
+	font-size: 28px;
+	color: #ea6464;
+}
+
+hr {
+	border-top: 1px solid #292727;
+	width: 98%;
+}
+
+/*
+*	Card Propetary
+*/
+
+.propetary {
+	margin: 15px 3px;
+}
+
+.propetary .info  {
+	text-align: left;
+	font-family: 'Titillium-Thin';
+	font-size: 16px;
+}
+
+.stars img {
+	width: 12px;
+}
+
+.propetary .avatar {
+	padding: 2px !important;
+}
+
+.favorite {
+	margin-top: 15px;
+	padding: 0;
+}
+
+/*
+*	Card Comment
+*/
+
+.comment .avatar {
+	padding:  0 !important;
+	margin-left: 3px;
+}
+
+.last {
+	text-align: left;
+	font-family: 'Titillium';
+	font-size: 16px;
+	color: #ea6464;
+	padding-left: 4px;
+}
+
+.info a  {
+	color: black;
+}
+
+.comment .name {
+	font-family: 'Titillium-Bold';
+	font-size: 13px;
+	color: black;
+}
+
+.comment .description {
+	font-family: 'Titillium-Light';
+	font-size: 12px;
+}
+
+.comment a.all-view {
+	font-family: 'Titillium';
+	font-size: 14px;
+	color: #ea6464;
+	margin-right: 5px;
+}
+
+.send-comment {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Titillium-Thin';
+	font-size: 12px;
+}
+
+.send-comment .col-md-8 {
+	padding-right: 4px;
+}
+
+.send-comment input {
+	padding: 4px;
+	border: 1px solid #b9b5b5;
+	height: 39px !important;
+	font-size: 16px;
+}
+
+.send-comment button {
+	background: #f8436e;
+	color: white;
+	border-radius: 0;
+	padding: 10px;
+	width: 100%;
+	height: 39px;
+	font-size: 14px;
+	padding-top: 8px;
+}
+
+
+/*
+*	Pagination
+*/
+
+.pagination {
+	border-radius: 0 !important;
+}
+
+.pagination > .active a {
+	background-color: #ea6464 !important;
+    border-color: #ea6464 !important;
+    color: white !important;
+    font-family: 'Titillium-Light';
+}
+
+.pagination a {
+	color: #ea6464 !important;
+}
+
+.services {
+	margin-top: 5%;
+	background: #dadada;
+	padding-bottom: 5%;
+}
+
+.title-services {
+	margin-top: 10vh;
+	text-align: center;
+	font-family: 'Titillium';
+	font-size: 36px;
+	margin-bottom: 10%;
+	line-height: 50px;
+}
+
+.subtitle-services {
+	font-family: 'Titillium-Bold';
+	font-size: 16px;
+}
+
+.content-service {
+	font-family: 'Lato';
+	font-size: 13px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+footer {
+	background: #464346;
+	padding: 30px 4% ;
+	color: white;
+}
+
+footer li {
+	text-decoration: none;
+	list-style: none;
+}
+
+footer li a {
+	color: white !important;
+	font-family: 'Lato-Light';
+	font-size: 14px;
+}
+
+footer .description {
+	font-family: 'Lato-Light';
+	font-size: 14px;
+	line-height: 25px;
+}
+.subtitle {
+	font-family: 'Lato-Bold';
+	font-size: 14px;
+}
+
+.help {
+	margin-left: 40px;
+}
+
+.serv {
+	font-family: 'Lato-Light';
+	font-size: 13px;
+	color: #f8436e;
+}
+
+.icons img {
+	width: 50px;
+}
+
+.icons {
+	padding: 6vh 8vh 3vh 8vh;
+}
+
+.desc-app {
+	margin-bottom: 20px;
+}
+
+.apps {
+	padding: 0 4px;
+}
+
+.pagination > .active a {
+    background-color: #f8436e !important;
+    border-color: #f8436e !important;
+}
+
+/*
+@media (min-width: 600px) {
+  .card-header img {
+  	width: 100% !important;
+  }
+
+  .card-title {
+  	font-size: 40px;
+  }
+
+  .talla {
+  	font-size: 30px;
+  }
+  .price {
+  	font-size: 40px;
+  }
+
+  .info .name {
+  	font-size: 30px;
+ }
+}*/
+
+.profile {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.list-group .list-group-item {
+	font-family: 'Titillium-Bold';
+	color: #000;
+}
+
+.profile label {
+	color: #f8436e;
+	font-family: 'Titillium-Thin';
+	font-size: 16px;
+}
+
+.profile .username,  {
+	font-family: 'Titillium-Thin';
+	font-size: 14px;
+}
+
+.profile .role {
+	font-size: 13px;
+	font-family: 'Titillium-Bold';
+	margin-top: 30px;
+}
+
+.header {
+	background: #f8436e;
+	padding-bottom: 15%;
+	position: relative;
+}
+
+.userdata {
+	position: absolute;
+	top: 20px;
+	margin-left: 8%;
+}
+
+.content-blank {
+	height: 95px;
+}
+
+.selected {
+	border-left: 8px solid #f8436e;
+}
+
+.first-item {
+	border-top: 0;
+	border-radius: 0 !important;	
+}
+
+.card-profile {
+	border-top: 2px solid #eee;
+	border-left: 2px solid #eee;
+	border-right: 2px solid #eee;
+}
+
+.profile input, .profile textarea {
+	border-color: #eee;
+	border-radius: 10px;
+}
+
+.profile input[type="checbox"] {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.label-check {
+	font-family: 'Titillium-Thin';
+	font-size: 13px;
+}
+
+.boxes {
+	display: flex;
+	margin-left: 1px;
+    margin-right: 15px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.box {
+	text-align: center;
+	border: 1px solid #eee;
+	width: 20%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Titillium-Bold';
+	font-size: 15px;
+}
+
+.selected-top {
+	border-bottom: 5px solid #f8436e;
+	
+}
+
+.lateral.list-group .list-group-item {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.spacer-grey {
+	background: #eee;
+	height: 60px;
+}
+
+.box span {
+	font-family: 'Titillium-Thin';
+	font-size: 18px;
+}
+
+.card-header .config {
+	background: #ea6464;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card-header .edit-product{
+	position: absolute;
+	top: 25px;
+	left: 0;
+	background: #eee;
+	font-family: 'Titillium';
+}
+.edit-product a {
+	font-size: 12px;
+	color: black !important; 
+}
+
+.box .username {
+	font-family: 'Titillium-Thin';
+	font-size: 13px;
+}
+
+.stars .quantity {
+	font-size: 12px;
+}
+
+.contact h1 {
+	font-family: 'Lato-Light';
+	font-size: 36px;
+	margin-top: 4%;
+}
+
+.contact label {
+	font-family: 'Titillium-Thin';
+	font-size: 16px;
+}
+
+.contact h2 {
+	font-family: 'Lato-Light';
+	font-size: 24px;
+}
+
+.contact .description {
+	font-family: 'Lato-Light';
+	font-size: 21px;
+}
+
+.btn-pink {
+	background: #f8436e;
+	color:white;
+	border-radius: 14px; 
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.contact input {
+	height: 39px;
+}
+.contact input, .contact textarea {
+	border-radius: 0;
+}
+
+.btn-pink-block {
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #f8436e;
+	color:white;
+	border-radius: 0;
+	display: block;
+	font-size: 15px;
+	margin: 0 5px 15px 5px;
+	font-family: 'Titillium-Bold';
+}
+.desc-client {
+	font-family: 'Titillium-Light';
+	font-size: 13px;
+	margin-left: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.last.client {
+	margin-left: 8px;
+}
+.pb-5 {
+	padding-bottom: 5%;
+}
+
+.card-line {
+	border: 1px solid #eee;
+	margin-bottom: 3%;
+}
+
+.date {
+	font-family: 'Titillium-Thin';
+	font-size: 12px;
+}
+
+.card-line .description {
+	font-size: 15px;
+	font-family: 'Titillium-Light';	
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+
+.icon-notify img{
+	margin-top: 10px;
+}
+
+.card-line a {
+	color: #333;
+}
+
+.card-line .username {
+	font-family: 'Titillium-Thin';
+	font-size: 17px;
+}
+
+.card-line .info {
+	color: #f8436e;
+	font-family: 'Titillium-Bold';
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.follower { 
+	border: 1px solid #eee;
+	margin-bottom: 3%;
+	padding: 0;
+	margin-right: 50px;
+}
+
+.table-roperito td {
+	vertical-align: middle !important;
+	border-bottom: 1px solid;
+}
+
+.table-roperito th {
+	text-align: center !important;
+	border-bottom: 0 !important;
+	font-family: 'Titillium-Bold';
+	font-size: 16px;
+}
+
+.title-big {
+	color: #f8436e;
+	font-size: 36px;
+	font-family: 'Titillium-Bold';
+	margin-bottom: 4%;
+}
+
+.padd {
+	padding-bottom: 10%;
+}
+
+.table-roperito {
+	background: #efeeee;
+}
+
+.table-roperito thead {
+	margin-bottom: 2% !important;
+	padding-bottom: 10px;
+}
+
+.table-roperito td img.product {
+	width: 120px;
+}
+
+.table-fecha {
+	font-family: 'Titillium-Bold';
+	font-size: 16px;
+	color:#f8436e;
+}
+
+.table-desc {
+	font-family: 'Titillium-Light';
+	font-size: 15px;
+}
+
+.table-desc-t {
+	font-family: 'Titillium-Bold';
+	font-size: 15px;
+}
+
+.table-precio {
+	font-family: 'Titillium-Bold';
+	font-size: 32px;
+	color: #f8436e;
+}
+
+.table-rating {
+	font-family: 'Titillium-Bold';
+	font-size: 14px;
+	color: #f8436e;
+}
+
+.table-desc-t {
+	font-family: 'Titillium-Bold';
+	font-size: 15px;
+
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	border-top: 0;
+}
+.table-descripcion {
+	font-family: 'Titillium-Light';
+	font-size: 15px;
+	width: 100px;
+}
+
+.table.table-border > thead > tr > th {
+	padding-bottom: 60px !important;
+	border-bottom: 0 !important;
+	padding-top: 20px !important;
+}
+
+.venta {
+	font-family: 'Titillium-Bold';
+	font-size: 16px;
+	color: #f8436e;
+}
+
+.credit, .debit {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.debit {
+	background: red;
+	font-size: 13px;
+}
+
+.credit {
+	background: green;
+}
+
+.box .bon {
+	font-size: 14px;
+	font-family: 'Titillium-Bold';
+	margin-bottom: 0;
+}
+
+.carterita.boxes .box {
+	padding-bottom: 0;
+}
+
+.box .bon-time {
+	font-family: 'Titillium-Light';
+	font-size: 14px;
+	color:#f8436e;
+}
+
+.box h3 {
+	margin-top: 0;
+}
+
+.notification {
+	padding: 10px;
+}
+
+.notification .avatar {
+	padding-right: 0 !important;
+}
+
+.notification .avatar img {
+	width: 38px;
+	margin-right: 10px;
+}
+
+.data {
+	padding-left: 0;
+}
+
+.delete {
+	position: absolute;
+	top:4px;
+	right: 0;
+	background: #f8436e;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+.dropPrecio {
+    padding: 12px;
+    text-align: left;
+}
+
+.dropPrecio>li>a {
+    padding-left: 5px;
+}
+
+.dropPrecio>li>a {
+    margin-top: 10px;
+    background: transparent !important;
+}
+
+input.form-control.input-xs.pnkbtn {
+    background: #f8436e;
+    color: white;
+    margin-top: 15px;
+    border: 0;
+}
+
+.fb-like.fb_iframe_widget {
+    margin-top: 14px;
+}
+
+span.desc {
+    font-family: 'Lato-Bold';
+}
+
+.talla {
+    float: left;
+    padding-left: 10px;
+}
+
+.category {
+    float: right;
+    padding-right: 10px;
+}
+
+.category>a {
+    color: #464346;
+    font-family: 'Titillium-Bold';
+}
+
+.price {
+    margin-top: 25px;
+}
+
+
+
+
+/* NEW */
+
+
+.drowSubmenuParent>.dropdown{
+	display: none;
+}
+
+.activeSub{
+	display: block !important;
+}
+
+.drowSubmenuParent>.dropdown>li {
+    list-style: none;
+}
+
+.drowSubmenuParent>.dropdown>li>a {
+    text-decoration: none;
+}
+
+
+
+.drowSubmenuParent2>.dropdown2{
+	display: none;
+}
+
+.drowSubmenuParent2>.dropdown2.activeSub2{
+	display: block !important;
+}
+
+.drowSubmenuParent2>.dropdown2>li {
+    list-style: none;
+}
+
+.drowSubmenuParent2>.dropdown2>li>a {
+    text-decoration: none;
+}
+
+ul.nav.navbar-nav.categorias>li>ul {
+    min-width: 200px;
+}
+
+.drowSubmenuParent2>.dropdown2 {
+    padding-left: 15px;
+}

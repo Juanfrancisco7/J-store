@@ -1,0 +1,435 @@
+@media only screen and (max-width: 1098px){
+	.title-slide {
+	    font-size: 59px;
+	    line-height: 65px;
+	    top: 50px;
+	}
+
+	.nav.navbar-nav {
+	    padding-left: 1.5%;
+	    padding-right: 2.5%;
+	}
+
+	.icons {
+	    padding: 4vh 0vh 3vh 6vh;
+	}
+}
+
+.logo-img {
+    max-width: 80px; /* Ajusta el valor según tus necesidades */
+    height: auto;
+}
+
+.footer__1{
+    display: flex;
+    align-items: center;
+    gap: .5rem;   
+}
+
+.footer__propiedades{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem 7rem 5rem;
+    align-items: center;
+}
+
+#tituloJStore {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #db5757;
+	font-weight: bold;
+	margin-top: 10px
+}
+
+
+@media only screen and (max-width: 998px){
+	.products .col-md-4, .products .col-sm-4, .products .col-lg-3 {
+	    width: 50%;
+	}
+
+	.propetary .avatar {
+	    width: 15%;
+	    float: left;
+	    padding-left: 9px !important;
+	}
+
+	.card-header>img {
+	    margin: 0 auto;
+	}
+
+	.mark {
+	    padding: 2% 10%;
+	}
+
+	.comment .avatar {
+	    margin-left: 3px;
+	    width: 16%;
+	    float: left;
+	    padding-left: 7px !important;
+	    padding-right: 12px !important;
+	}
+
+	.card {
+	    float: left;
+	    height: 700px;
+	}
+
+	.card-header {
+	    float: left;
+	    width: 100%;
+	}
+
+	.card-body {
+	    float: left;
+	    width: 100%;
+	}
+
+	.send-comment {
+	    float: left;
+	    width: 100%;
+	    margin-left: 0;
+	}
+
+	.send-comment>div {
+	    width: 92%;
+	    margin-left: 4%;
+	    margin-bottom: 10px;
+	}
+
+	.title-slide {
+	    font-size: 48px;
+	    line-height: 55px;
+	    top: 33px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 768px){
+	.navbar-nav.navtop > li {
+	    width: 100%;
+	    float: left;
+	    margin: 0;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	.nav.navbar-nav {
+	    padding-left: 0;
+	    padding-right: 0;
+	    margin: 0;
+	    margin-bottom: 30px;
+	    margin-top: 30px;
+	}
+
+	.content-service {
+	    font-size: 15px;
+	    margin-bottom: 18px;
+	}
+
+	.redes {
+	    text-align: center;
+	    margin-bottom: 34px;
+	}
+
+	footer .description {
+	    text-align: center;
+	}
+
+	.card {
+	    height: 750px;
+	}
+
+	.card {
+	    float: left;
+	    height: 750px;
+	}
+
+	p.subtitle.help {
+	    text-align: center;
+	    padding-left: 0;
+	    margin-left: 0;
+	    font-size: 20px;
+	}
+
+	.desc-app {
+	    font-size: 20px;
+	}
+
+	ul.list {
+	    text-align: center;
+	    padding-left: 0;
+	}
+
+	.icons>div>div>p {
+	    font-size: 24px;
+	}
+
+	.icons>div>div>p.serv {
+	    font-size: 18px;
+	}
+
+	.nav.categorias > li > a:hover, .nav > li > a:focus {
+	    background-color: transparent !important;
+	}
+
+	ul.dropdown-menu {
+	    text-align: center;
+	}
+
+	.navbar-toggle .icon-bar {
+	    background: white;
+	}
+
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	    background-color: transparent;
+	    border-color: #337ab7;
+	}
+
+	.nav-categories .dropdown .dropdown-menu li a {
+	    color: white !important;
+	}
+
+	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	    background-color: transparent;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+	.title-slide {
+	    font-size: 43px;
+	    line-height: 55px;
+	    top: 3px;
+	}
+
+	.card {
+	    float: left;
+	    height: auto;
+	}
+
+	.comment .avatar {
+	    width: 24%;
+	}
+
+	.card {
+	    float: left;
+	    height: auto;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.title-slide {
+	    font-size: 43px;
+	    line-height: 55px;
+	    top: 3px;
+	}
+
+	.card {
+	    float: left;
+	    height: auto;
+	}
+
+	.comment .avatar {
+	    width: 24%;
+	}
+
+	.products .col-md-4, .products .col-sm-4, .products .col-lg-3 {
+	    width: 100%;
+	}
+
+	.title-slide {
+	    font-size: 34px;
+	    line-height: 37px;
+	}
+
+	.comment .avatar {
+	    width: 15%;
+	}
+
+	.propetary div {
+	    width: 100% !important;
+	    display: block;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+
+	.propetary .avatar img {
+	    width: 28%;
+	    margin: 0 auto;
+	}
+
+	.favorite>img {
+	    margin: 0 auto;
+	}
+
+	.last {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+}
+
+
+@media only screen and (max-width: 440px){
+	.title-slide {
+	    margin-left: 20px;
+	}
+
+	.talla {
+	    float: none;
+	    padding-left: 0px;
+	}
+
+	.category {
+	    float: none;
+	    padding-right: 0;
+	}
+
+	.comment .description {
+	    font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 380px){
+	.icons {
+	    padding: 4vh 0vh 3vh 3vh;
+	    width: 98%;
+	}
+
+	footer>div>div>div {
+	    padding-left: 10px !important;
+	    padding-right: 10px !important;
+	}
+
+	.comment .avatar {
+	    width: 18%;
+	}
+
+	.title-services {
+	    font-size: 32px;
+	    line-height: 40px;
+	}
+
+	.content-service {
+	    font-size: 15px;
+	    margin-bottom: 30px;
+	}
+
+	.content-service {
+	    padding-left: 30px;
+	    padding-right: 30px;
+	}
+
+	.container-fluid.products {
+	    padding: 0;
+	}
+
+	.products>div.row.text-center {
+	    width: 100%;
+	}
+
+	.title-slide {
+	    font-size: 24px;
+	    line-height: 27px;
+	}
+}
+
+
+/* 
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.card-line .username {
+		font-size: 45px;
+	}
+
+	.card-line {
+		position: relative;
+	}
+	
+	.card-line .icon-notify {
+		position: initial;
+	}
+
+	.credit, .debit {
+		width: 50px;
+		height: 50px;
+		font-size: 32px;
+	}
+
+	.card-line {
+		text-align: center;
+	}
+
+	.card-line .avatar img {
+		width: 50%;
+	}
+
+	.card-line .date {
+		font-size: 30px;
+	}
+
+	.card-line .description {
+		font-size: 40px;
+	}
+
+	.icon-notify img {
+		display: none;
+	}
+
+	.card-line .follower {
+		margin-right: 0;
+	}
+
+	.card-line .stars img {
+		width: 50px;
+	}
+
+	.card-line .info {
+		font-size: 40px;
+	}
+
+	.boxes {
+		display: block;
+	}
+	
+	.box .role {
+		font-size: 40px;
+	}
+	.box .username {
+		font-size: 40px;
+	}
+
+	.box {
+		width: 100%;
+	}
+
+	.box .stars img {
+		width: 40px;
+	}
+
+	.box img {
+		width: 200px;
+	}
+
+	.box .col-md-4 {
+		text-align: center;
+	}
+
+	.box .col-md-8 {
+		text-align: center;
+	}
+
+	.box .quantity {
+		display: none;
+	}
+
+	.list-group-item {
+		font-size: 40px;
+	}
+}
+
+ */
