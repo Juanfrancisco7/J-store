@@ -985,7 +985,7 @@
       <div class="row">
         <div class="col-md-3">
             <p class="description">
-             En J-Store encontraras todo lo que estabas buscando, tanto nuevo como usado
+             En MundoJuan encontraras todo lo que estabas buscando, tanto nuevo como usado
              con una garantia superior a lo que ofrece cualquier vendedor informal; recuerda que 
              cuentas con nosotros con nuestro sistema de soporte 24/7 si tienes dudas o algun inconveniente.
             </p>
@@ -1055,13 +1055,86 @@
 
       <footer class="footer">
         <div class="footer__propiedades">
-            <div class="footer__1">
-                <b><i class="fa-regular fa-copyright"></i></b>
-                <p>Desarrollado por <b>JuanFranciscoBencomoChacin</b></p>
-            </div>
-            <div class="footer__2">
-                <p>2022</p>
-            </div>
+          <div class="footer__1">
+              <i class="fa-regular fa-copyright"></i>
+              <p class="footer-text">Desarrollado por <span class="footer-name">JuanFranciscoBencomoChacin</span></p>
+          </div>
+          <div class="footer__2">
+              <p class="footer-year">2022</p>
+          </div>
+      </div>
+      
+      <style>
+          .footer__propiedades {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 20px;
+              background: linear-gradient(45deg, #ff6b6b, #f06595);
+              color: white;
+              font-family: 'Arial', sans-serif;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease;
+          }
+      
+          .footer__propiedades:hover {
+              transform: scale(1.05);
+          }
+      
+          .footer__1, .footer__2 {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+      
+          .footer__1 i {
+              font-size: 2rem;
+              color: #fff;
+              margin-bottom: 10px;
+              animation: fadeIn 1s ease-in-out;
+          }
+      
+          .footer-text {
+              font-size: 1.2rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+              animation: slideIn 1s ease-in-out;
+          }
+      
+          .footer-name {
+              color: #fff;
+              font-size: 1.4rem;
+              font-weight: 900;
+              text-decoration: underline;
+          }
+      
+          .footer__2 p {
+              font-size: 1.2rem;
+              font-weight: 300;
+              margin-top: 10px;
+              animation: bounce 2s infinite;
+          }
+      
+          @keyframes fadeIn {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+          }
+      
+          @keyframes slideIn {
+              0% { transform: translateX(-100%); }
+              100% { transform: translateX(0); }
+          }
+      
+          @keyframes bounce {
+              0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+              40% { transform: translateY(-10px); }
+              60% { transform: translateY(-5px); }
+          }
+      </style>
+      
         </div>
 
     </div>
