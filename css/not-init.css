@@ -1,0 +1,196 @@
+/* Estilo para el mensaje de donación */
+.mensaje-donacion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff; /* Fondo azul */
+    color: white;
+    padding: 25px; /* Aumentado */
+    border-radius: 15px; /* Más redondeado */
+    text-align: center;
+    z-index: 1000;
+    width: 80%; /* Más ancho */
+    max-width: 600px;  /* Más grande */
+    font-size: 18px; /* Texto más grande */
+    font-family: 'Arial', sans-serif;
+    animation: mensajeAnimado 5s ease-out, fadeIn 5s ease-out forwards;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Animación de entrada para el mensaje */
+@keyframes mensajeAnimado {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+    }
+    30% {
+      transform: translate(-50%, -60%) scale(1.1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translate(-50%, -40%) scale(1.05);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+}
+
+/* Fondo con gradiente suave */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Animación de fade-in para el h2 (texto completo) */
+.mensaje-donacion h2 {
+    font-size: 22px; /* Aumentado */
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInTexto 2s ease-out forwards;
+    display: block;
+    font-weight: bold; /* Negrita */
+}
+
+/* Animación para que el texto completo se muestre en 2 segundos */
+@keyframes fadeInTexto {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Estilos para la palabra MundoJuan que será clicable */
+.mundojuan-link {
+    font-weight: bold;
+    font-size: 18px; /* Aumentado */
+    color: #FFDD00; /* Color brillante */
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid #FFDD00;
+    transition: all 0.3s ease;
+}
+
+.mundojuan-link:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Animación para las imágenes de PayPal (más grandes) */
+.paypal-container {
+    margin: 25px 0;
+    animation: imagenPayPalAnimada 5s ease-out forwards;
+}
+
+@keyframes imagenPayPalAnimada {
+    0% {
+      transform: translateX(-300px) scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(50px) scale(0.6);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateX(0) scale(0.8); /* Más grande */
+      opacity: 1;
+    }
+}
+
+.paypal-logo {
+    width: 120px;  /* Más grande */
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo del botón "Continuar" */
+.continuar-btn {
+    background-color: #28a745; /* Verde */
+    color: white;
+    font-size: 18px; /* Aumentado */
+    padding: 15px 30px; /* Aumentado */
+    border: none;
+    border-radius: 8px; /* Más redondeado */
+    cursor: pointer;
+    animation: botonAnimado 5s ease-out forwards;
+}
+
+@keyframes botonAnimado {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+.continuar-btn:hover {
+    background-color: #218838;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contador de redirección */
+#contador {
+    font-size: 18px; /* Aumentado */
+    margin-top: 20px;
+    animation: contadorAnimado 2s ease-out forwards;
+}
+
+/* Animación del contador */
+@keyframes contadorAnimado {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 767px) {
+    .mensaje-donacion {
+      width: 85%;
+      padding: 20px; /* Aumentado */
+      font-size: 16px; /* Más grande */
+    }
+
+    .mensaje-donacion h2 {
+      font-size: 20px; /* Más grande */
+    }
+
+    .mundojuan-link {
+      font-size: 18px; /* Más grande */
+    }
+
+    .paypal-logo {
+      width: 100px; /* Aumentado */
+    }
+
+    .continuar-btn {
+      font-size: 16px;
+      padding: 12px 24px; /* Aumentado */
+    }
+
+    #contador {
+      font-size: 16px; /* Más grande */
+    }
+}
