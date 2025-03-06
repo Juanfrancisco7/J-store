@@ -16,7 +16,7 @@ function mostrarMensajeDonacion() {
     </div>
     <button id="continuar" class="continuar-btn">Continuar</button>
     <p id="contador">Redirigiendo en 5 segundos...</p>
-  `;
+  `
 
   // Añadir el mensaje al cuerpo del documento
   document.body.appendChild(mensajeDonacion);
