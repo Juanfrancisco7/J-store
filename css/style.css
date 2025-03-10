@@ -1137,3 +1137,27 @@ ul.nav.navbar-nav.categorias>li>ul {
 .drowSubmenuParent2>.dropdown2 {
     padding-left: 15px;
 }
+
+.col-md-4.col-xs-12.col-lg-3 {
+	max-width: 330.78px; /* Ancho fijo */
+  }
+  
+  .card {
+	height: 656.09px; /* Altura fija */
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .card-header img {
+	width: 100%; /* Para que las imágenes ocupen todo el ancho */
+	height: 200px; /* Ajusta la altura de la imagen */
+	object-fit: cover; /* Evita deformaciones */
+  }
+  
+  .card-body {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
