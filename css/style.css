@@ -116,7 +116,7 @@
 
 .infor .profile {
 	border-radius: 50%;
-	background: 
+	background: #fff; /* Add a valid property value */
 }
 
 .infor .dropdown-menu a {
@@ -649,7 +649,7 @@ footer .description {
 	font-size: 16px;
 }
 
-.profile .username,  {
+.profile .username {
 	font-family: 'Titillium-Thin';
 	font-size: 14px;
 }
