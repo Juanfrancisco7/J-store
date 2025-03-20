@@ -18,7 +18,7 @@ function mostrarMensajeDonacion() {
     <p id="contador">Redirigiendo en 5 segundos...</p>
   `
 
-  
+
   // Añadir el mensaje al cuerpo del documento
   document.body.appendChild(mensajeDonacion);
 
@@ -43,3 +43,4 @@ function mostrarMensajeDonacion() {
   // Marcar que el mensaje ha sido mostrado en esta sesión
   sessionStorage.setItem('donationMessageShown', 'true');
 }
+
