@@ -44,3 +44,68 @@ function mostrarMensajeDonacion() {
   sessionStorage.setItem('donationMessageShown', 'true');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  let mensajeEliminado = false; // Para saber si el primer anuncio ya desapareció
+
+  const observer = new MutationObserver(() => {
+    if (!document.querySelector(".mensaje-donacion")) {
+      mensajeEliminado = true;
+      observer.disconnect(); // Dejar de observar cambios en el DOM
+      iniciarMensajeFlotante(); // Iniciar el ciclo del mensaje flotante
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  function iniciarMensajeFlotante() {
+    setTimeout(() => {
+      mostrarMensajeFlotante();
+      setInterval(() => {
+        mostrarMensajeFlotante();
+      }, 30000); // Repetir cada 30 segundos
+    }, 1000); // Pequeña espera para evitar problemas de sincronización
+  }
+
+  function mostrarMensajeFlotante() {
+    // Crear el mensaje flotante
+    const mensajeFlotante = document.createElement("div");
+    mensajeFlotante.classList.add("mensaje-flotante");
+    mensajeFlotante.innerHTML = `
+      <p>Si aún no nos has donado, puedes hacerlo <a href="https://www.paypal.me/juanfchacin7" target="_blank" class="donacion-link">aquí</a>.</p>
+    `;
+
+    // Agregar el mensaje al cuerpo del documento
+    document.body.appendChild(mensajeFlotante);
+
+    // Eliminar el mensaje después de 10 segundos
+    setTimeout(() => {
+      mensajeFlotante.remove();
+    }, 10000);
+  }
+
+  // Estilos CSS para el mensaje flotante
+  const estilo = document.createElement("style");
+  estilo.innerHTML = `
+    .mensaje-flotante {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 1000;
+    }
+    .donacion-link {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+    .mensaje-flotante:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+  `;
+
+  // Agregar los estilos al documento
+  document.head.appendChild(estilo);
+});
