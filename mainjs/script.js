@@ -67,19 +67,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function mostrarMensajeFlotante() {
+    // Verificar si ya existe un mensaje flotante y eliminarlo antes de crear uno nuevo
+    const mensajeExistente = document.querySelector(".mensaje-flotante");
+    if (mensajeExistente) mensajeExistente.remove();
+
     // Crear el mensaje flotante
     const mensajeFlotante = document.createElement("div");
     mensajeFlotante.classList.add("mensaje-flotante");
     mensajeFlotante.innerHTML = `
+      <span class="cerrar-flotante">✖</span>
       <p>Si aún no nos has donado, puedes hacerlo <a href="https://www.paypal.me/juanfchacin7" target="_blank" class="donacion-link">aquí</a>.</p>
     `;
 
     // Agregar el mensaje al cuerpo del documento
     document.body.appendChild(mensajeFlotante);
 
-    // Eliminar el mensaje después de 10 segundos
-    setTimeout(() => {
+    // Agregar evento al botón de cerrar
+    mensajeFlotante.querySelector(".cerrar-flotante").addEventListener("click", () => {
       mensajeFlotante.remove();
+    });
+
+    // Eliminar el mensaje después de 10 segundos si no ha sido cerrado manualmente
+    setTimeout(() => {
+      if (document.body.contains(mensajeFlotante)) {
+        mensajeFlotante.remove();
+      }
     }, 10000);
   }
 
@@ -96,6 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
       border-radius: 5px;
       font-size: 14px;
       z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 300px;
     }
     .donacion-link {
       color: #FFD700;
@@ -103,6 +119,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     .mensaje-flotante:hover {
       background: rgba(0, 0, 0, 0.9);
+    }
+    .cerrar-flotante {
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 2px 6px;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+    .cerrar-flotante:hover {
+      background: rgba(255, 255, 255, 0.6);
     }
   `;
 
