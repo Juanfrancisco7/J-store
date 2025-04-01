@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mostrarMensajeFlotante();
       setInterval(() => {
         mostrarMensajeFlotante();
-      }, 30000); // Repetir cada 30 segundos
+      }, 45000); // Repetir cada 45 segundos
     }, 1000); // Pequeña espera para evitar problemas de sincronización
   }
 
