@@ -3,6 +3,7 @@ if (!sessionStorage.getItem('donationMessageShown')) {
   mostrarMensajeDonacion();
 }
 
+
 function mostrarMensajeDonacion() {
   // Crear el contenedor del mensaje
   const mensajeDonacion = document.createElement("div");
