@@ -631,133 +631,58 @@ body {
    FOOTER IMPROVEMENTS
    ======================================== */
 
-.main-footer {
+footer {
   background: #464346;
+  padding: 30px 4%;
   color: white;
-  padding: 50px 0 20px;
 }
 
-.footer-content {
-  gap: 30px;
+footer li {
+  text-decoration: none;
+  list-style: none;
 }
 
-.footer-section {
-  margin-bottom: 30px;
+footer li a {
+  color: white !important;
+  font-family: 'Lato-Light';
+  font-size: 14px;
 }
 
-.footer-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 0 15px 0;
+footer .description {
+  font-family: 'Lato-Light';
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.subtitle {
+  font-family: 'Lato-Bold';
+  font-size: 14px;
+}
+
+.help {
+  margin-left: 40px;
+}
+
+.serv {
+  font-family: 'Lato-Light';
+  font-size: 13px;
   color: #f8436e;
 }
 
-.footer-subtitle {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin: 0 0 15px 0;
-  color: white;
+.icons img {
+  width: 50px;
 }
 
-.description {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
-  color: #ccc;
+.icons {
+  padding: 6vh 8vh 3vh 8vh;
 }
 
-.social-links {
-  display: flex;
-  gap: 15px;
-}
-
-.social-link {
-  transition: transform 0.3s ease;
-}
-
-.social-link:hover {
-  transform: scale(1.1);
-}
-
-.app-downloads {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.desc-app {
   margin-bottom: 20px;
 }
 
-.app-link {
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.app-link:hover {
-  transform: scale(1.05);
-}
-
-.app-image {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-}
-
-.payment-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.stat-item {
-  text-align: center;
-  padding: 15px 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
-
-.stat-icon {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.stat-number {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f8436e;
-  margin-bottom: 5px;
-}
-
-.stat-label {
-  font-size: 12px;
-  color: #ccc;
-}
-
-.help-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.help-links li {
-  margin-bottom: 8px;
-}
-
-.help-link {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.help-link:hover {
-  color: #f8436e;
+.apps {
+  padding: 0 4px;
 }
 
 /* ========================================
@@ -820,18 +745,6 @@ body {
     font-size: 1.8rem;
   }
   
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  
-  .app-downloads {
-    align-items: center;
-  }
-  
-  .social-links {
-    justify-content: center;
-  }
 }
 
 /* Small devices (768px and up) */
@@ -856,9 +769,6 @@ body {
     line-height: 3.5rem;
   }
   
-  .stats-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* Medium devices (992px and up) */
