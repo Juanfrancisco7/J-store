@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>MundoJuan</title>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLSNX7QBL6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DLSNX7QBL6');
-</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="MundoJuan - Tu tienda online de confianza. Encuentra ropa, calzado, accesorios y tecnología con las mejores ofertas y envío gratis.">
+  <meta name="keywords" content="tienda online, ropa, calzado, accesorios, tecnología, MundoJuan, compras online">
+  <meta name="author" content="JuanFranciscoBencomoChacin">
+  <meta name="theme-color" content="#f8436e">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="MundoJuan - Tu tienda online de confianza">
+  <meta property="og:description" content="Encuentra ropa, calzado, accesorios y tecnología con las mejores ofertas y envío gratis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mundojuan.com">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MundoJuan - Tu tienda online de confianza">
+  <meta name="twitter:description" content="Encuentra ropa, calzado, accesorios y tecnología con las mejores ofertas y envío gratis.">
+  
+  <title>MundoJuan - Tu tienda online de confianza</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLSNX7QBL6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DLSNX7QBL6');
+  </script>
+  
   <link rel="icon" href="https://www.pngmart.com/files/14/J-Letter-PNG-Transparent.png">
+  <link rel="apple-touch-icon" href="https://www.pngmart.com/files/14/J-Letter-PNG-Transparent.png">
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/not-init.css">
+  <link rel="stylesheet" href="css/mobile-responsive.css">
 </head>
 <body>
 
@@ -30,33 +50,36 @@
   <nav class="nav-roperito">  
     <div class="container-fluid"> 
         <div class="row"> 
-            <div class="col-md-3 text-center">
-              <a href="#">  
-                <figure>
-                  <h1 id="tituloJStore">MundoJuan By:@JuanFrancisco7</h1>
+            <div class="col-xs-12 col-sm-12 col-md-3 text-center">
+              <a href="#" class="logo-link">  
+                <figure class="logo-container">
+                  <h1 id="tituloJStore" class="site-title">MundoJuan</h1>
+                  <span class="site-subtitle">By: @JuanFrancisco7</span>
                 </figure>
               </a>
             </div>
           
-            <div class="col-md-5 mt-10">
+            <div class="col-xs-12 col-sm-12 col-md-5 mt-10">
                 <div class="row">
-                  <div class="col-md-11 col-md-offset-1">
+                  <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
                     <div class="input-search">
-                      <input type="text" class="form-control" placeholder="¿Que estas buscando?">
-                      <div class="icon-search">
-                        <img src="icons/ico-lupa-04.svg" alt="" width="15" height="15">
-                      </div>
+                      <input type="text" class="form-control search-input" placeholder="¿Qué estás buscando?">
+                      <button class="icon-search" type="button" aria-label="Buscar">
+                        <img src="icons/ico-lupa-04.svg" alt="Buscar" width="15" height="15">
+                      </button>
                     </div>
                   </div>
                 </div>
             </div>
           
-            <div class="col-md-4 text-center mt-10 links">
-              <a href="#">
-                <img src="icons/ico-login-03.svg" alt="" width="20" height="20"  class="img-responsive">
-                Ingresar / Resgistrarte
-              </a>
-              <a href="#" class="btn btn-sale">PROMOCIONES</a>
+            <div class="col-xs-12 col-sm-12 col-md-4 text-center mt-10 links">
+              <div class="user-actions">
+                <a href="#" class="login-link">
+                  <img src="icons/ico-login-03.svg" alt="Login" width="20" height="20" class="img-responsive">
+                  <span class="login-text">Ingresar / Registrarte</span>
+                </a>
+                <a href="#" class="btn btn-sale">PROMOCIONES</a>
+              </div>
             </div>
         </div>
     </div>
@@ -71,7 +94,7 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Menú de navegación">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -82,35 +105,30 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navtop">
-          <li class="pull-left pr-4"><a href="#">Tienda</a></li>
-          <li class="pull-left pr-4"><a href="#">Calzado</a></li>
-          <li class="dropdown pull-left pr-4">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
+          <li class="nav-item"><a href="#" class="nav-link">Tienda</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Calzado</a></li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Ayuda <span class="caret"></span>
+            </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Soporte Online</a></li>
-              <li><a href="#">Soporte Whatsapp</a></li>
+              <li><a href="#" class="dropdown-item">Soporte Online</a></li>
+              <li><a href="#" class="dropdown-item">Soporte Whatsapp</a></li>
             </ul>
           </li>
-          <li class="pull-left whatsapp envio">
-            <a href="">
-              <img src="icons/ico-whapp.png" alt="">
-              +34  +58
+          <li class="nav-item whatsapp envio">
+            <a href="https://wa.me/34123456789" class="nav-link whatsapp-link" target="_blank" rel="noopener">
+              <img src="icons/ico-whapp.png" alt="WhatsApp" class="whatsapp-icon">
+              <span class="whatsapp-text">+34 / +58</span>
             </a>
           </li>
-          <li class="pull-left">
-           
-          </li>
-          <li class="pull-right">
-          </li>
-          <li class="pull-right envio hidden-sm">
-            <a href="">
-              <img src="" alt="">
-              Envios nacionales e internacionales.
+          <li class="nav-item envio shipping-info">
+            <a href="#" class="nav-link shipping-link">
+              <span class="shipping-icon">🚚</span>
+              <span class="shipping-text">Envíos nacionales e internacionales</span>
             </a>
           </li>
         </ul>
-       
-        
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -124,16 +142,17 @@
   <nav class="navbar nav-categories">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false" aria-label="Menú de categorías">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <span class="navbar-brand visible-xs">Categorías</span>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-        <ul class="nav navbar-nav categorias" style="color: black;">
+        <ul class="nav navbar-nav categorias text-center">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -526,15 +545,23 @@
             Slider
   _____________________________________________ -->
 
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div id="carousel-example-generic" class="carousel slide hero-slider" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">
-      <div class="item active" style="position: relative;">
-        <img src="img/banner-sli.jpg" alt="Vender">
-        <h1 class="title-slide"><span class="firts-text">Porque MundoJuan,</span> <span class="desc">lo tiene</span> TODO!</h1>
+      <div class="item active hero-slide">
+        <div class="hero-image-container">
+          <img src="img/banner-sli.jpg" alt="MundoJuan - Tu tienda online de confianza" class="hero-image">
+        </div>
+        <div class="hero-content">
+          <h1 class="title-slide">
+            <span class="first-text">Porque MundoJuan,</span> 
+            <span class="desc">lo tiene</span> 
+            <span class="highlight-text">TODO!</span>
+          </h1>
+        </div>
       </div>
     </div>
   </div>
@@ -544,13 +571,18 @@
             Products
   _____________________________________________ -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="text-msg text-center mb-4">Nuestros artículos más nuevos a tu alcance. ¡No dejes escapar esta oportunidad única!</p>
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="section-header">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="text-msg text-center mb-4">Nuestros artículos más nuevos a tu alcance. ¡No dejes escapar esta oportunidad única!</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 
@@ -564,81 +596,65 @@
   _____________________________________________ -->
 
   <div class="container-fluid products">
-    <div class="row ml-4 mr-4">
-     <div class="col-md-4 col-xs-12 col-lg-3">
-        <div class="card">
+    <div class="row">
+     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card">
           <div class="card-header">
-            
-            <img src="img/prueba redimensionada.jpg" alt="" class="img-responsive">
-            <div class="mark">Moviles y tecnologia</div>
+            <div class="product-image-container">
+              <img src="img/prueba redimensionada.jpg" alt="Samsung Galaxy S25 Ultra 1TB" class="product-image">
+              <div class="product-badge">Móviles y Tecnología</div>
+            </div>
           </div>
           <div class="card-body">
-            <div class="card-title">Samsung galaxy S25 ultra 1tb</div>
-            <div class="talla">Samsung</div>
-            <div class="category">
-              <a href="">
-                Gray/black
-              </a>
-            </div>
-
-            <div class="price">
-              <span class="troke">1.270€</span> <span class="real">1.115€</span>
-            </div>
-
-            <div class="propetary">
-              <div class="col-md-2 avatar mb-4">  
-                  <img src="img/check.png" alt="" class="img-responsive">
+            <div class="product-info">
+              <h3 class="card-title">Samsung Galaxy S25 Ultra 1TB</h3>
+              <div class="product-details">
+                <span class="brand">Samsung</span>
+                <span class="color">Gray/Black</span>
               </div>
-              <div class="col-md-8 col-sm-8 mb-4">
-                <div class="info">
-                 <a href="#">
-                  <div class="name">
-                    
-                  </div>
-                  </a>
+            </div>
+
+            <div class="price-section">
+              <span class="old-price">1.270€</span> 
+              <span class="current-price">1.115€</span>
+            </div>
+
+            <div class="seller-info">
+              <div class="seller-avatar">
+                <img src="img/check.png" alt="Vendedor verificado" class="verified-icon">
+              </div>
+              <div class="seller-details">
+                <div class="rating">
                   <div class="stars">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
                   </div>
+                  <span class="rating-text">5.0</span>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-2 mb-4 p-0">
-                <div class="favorite">
-                  <img src="icons/ico-favorite-21.svg" alt="" width="20" height="20" class="img-responsive">
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <div class="comment">
-                <div class="col-md-1 avatar">
-                  <img src="img/check.png" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-10 text-left">
-                  <a href=""><div class="name">Descripcion</div></a>
-                  <br>
-                  <p class="description"> Este samsung galaxy S25 ultra
-                    trae lo mejor de la nueva tecnologia, puede ser tuyo con solo un click.
-                  </p>
-                </div> 
-              <div class="row">
-                <div class="col-md-12">
-                  <br>
-                  <a class="pull-right all-view">Ver todos</a>
-                </div>
+              <div class="favorite-btn">
+                <button class="btn-favorite" aria-label="Agregar a favoritos">
+                  <img src="icons/ico-favorite-21.svg" alt="Favorito" width="20" height="20">
+                </button>
               </div>
             </div>
+            
+            <div class="product-description">
+              <div class="description-header">
+                <img src="img/check.png" alt="Descripción" class="description-icon">
+                <span class="description-title">Descripción</span>
+              </div>
+              <p class="description-text">
+                Este Samsung Galaxy S25 Ultra trae lo mejor de la nueva tecnología, puede ser tuyo con solo un click.
+              </p>
+              <a href="#" class="view-all-link">Ver todos los detalles</a>
+            </div>
 
-            <div class="row mb-4 mt-4 send-comment" >
-              <div class="col-md-7 col-md-offset-1 col-xs-6 col-xs-offset-1 p-0">
-                
-              </div>
-              <div class="col-md-3 p-0">
-                
-              </div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-block">Comprar Ahora</button>
             </div>
           </div>
         </div>
@@ -651,80 +667,64 @@
             Producto 2
   _____________________________________________ -->
       
-      <div class="col-md-4 col-xs-12 col-lg-3">
-        <div class="card">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card">
           <div class="card-header">
-            <img src="img/product2.jpg" alt="" class="img-responsive">
-            <div class="mark">Para el</div>
+            <div class="product-image-container">
+              <img src="img/product2.jpg" alt="Súeter Gris" class="product-image">
+              <div class="product-badge">Para Él</div>
+            </div>
           </div>
           <div class="card-body">
-            <div class="card-title">Sueter gris</div>
-            <div class="talla">Talla unica</div>
-            <div class="category">
-              <a href="">
-                Gris/azul/verde
-              </a>
-            </div>
-
-            <div class="price">
-              <span class="troke">11.25€</span> <span class="real">8.41€</span>
-            </div>
-
-            <div class="propetary">
-              <div class="col-md-2 avatar mb-4">  
-                  <img src="img/check.png" alt="" class="img-responsive">
+            <div class="product-info">
+              <h3 class="card-title">Súeter Gris</h3>
+              <div class="product-details">
+                <span class="size">Talla Única</span>
+                <span class="color">Gris/Azul/Verde</span>
               </div>
-              <div class="col-md-8 col-sm-8 mb-4">
-                <div class="info">
-                 <a href="#">
-                  <div class="name">
-                    
-                  </div>
-                  </a>
+            </div>
+
+            <div class="price-section">
+              <span class="old-price">11.25€</span> 
+              <span class="current-price">8.41€</span>
+            </div>
+
+            <div class="seller-info">
+              <div class="seller-avatar">
+                <img src="img/check.png" alt="Vendedor verificado" class="verified-icon">
+              </div>
+              <div class="seller-details">
+                <div class="rating">
                   <div class="stars">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
                   </div>
+                  <span class="rating-text">5.0</span>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-2 mb-4 p-0">
-                <div class="favorite">
-                  <img src="icons/ico-favorite-21.svg" alt="" width="20" height="20" class="img-responsive">
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <div class="comment">
-                <div class="col-md-1 avatar">
-                  <img src="img/check.png" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-10 text-left">
-                  <a href=""><div class="name">Descripcion</div></a>
-                  <br>
-                  <p class="description">Viste con estilo que perdura en el tiempo. 
-                    Explora nuestra selección que fusiona lo último en moda con la 
-                    elegancia clásica.</p>
-                </div> 
-              <div class="row">
-                <div class="col-md-12">
-                  <br>
-                  <a class="pull-right all-view">Ver todos</a>
-                </div>
+              <div class="favorite-btn">
+                <button class="btn-favorite" aria-label="Agregar a favoritos">
+                  <img src="icons/ico-favorite-21.svg" alt="Favorito" width="20" height="20">
+                </button>
               </div>
             </div>
-
-            <div class="row mb-4 mt-4 send-comment" >
-              <div class="col-md-7 col-md-offset-1 col-xs-6 col-xs-offset-1 p-0">
-                
+            
+            <div class="product-description">
+              <div class="description-header">
+                <img src="img/check.png" alt="Descripción" class="description-icon">
+                <span class="description-title">Descripción</span>
               </div>
-              <div class="col-md-3 p-0">
+              <p class="description-text">
+                Viste con estilo que perdura en el tiempo. Explora nuestra selección que fusiona lo último en moda con la elegancia clásica.
+              </p>
+              <a href="#" class="view-all-link">Ver todos los detalles</a>
+            </div>
 
-                
-              </div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-block">Comprar Ahora</button>
             </div>
           </div>
         </div>
@@ -737,78 +737,64 @@
             Producto 3
   _____________________________________________ -->
 
-      <div class="col-md-4 col-xs-12 col-lg-3">
-        <div class="card">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card">
           <div class="card-header">
-            <img src="img/nike1.jpg" alt="" class="img-responsive">
-            <div class="mark">Zapatos</div>
+            <div class="product-image-container">
+              <img src="img/nike1.jpg" alt="Nike AirMax 2 CB 94" class="product-image">
+              <div class="product-badge">Zapatos</div>
+            </div>
           </div>
           <div class="card-body">
-            <div class="card-title">AirMax 2 CB 94</div>
-            <div class="talla">Talla disponibles</div>
-            <div class="category">
-              <a href="">
-                41 y 42
-              </a>
-            </div>
-
-            <div class="price">
-              <span class="troke">126.69€</span> <span class="real">101.35€</span>
-            </div>
-
-            <div class="propetary">
-              <div class="col-md-2 avatar mb-4">  
-                  <img src="img/check.png" alt="" class="img-responsive">
+            <div class="product-info">
+              <h3 class="card-title">Nike AirMax 2 CB 94</h3>
+              <div class="product-details">
+                <span class="size">Tallas Disponibles</span>
+                <span class="sizes">41 y 42</span>
               </div>
-              <div class="col-md-8 col-sm-8 mb-4">
-                <div class="info">
-                 <a href="#">
-                  <div class="name">
-                    
-                  </div>
-                  </a>
+            </div>
+
+            <div class="price-section">
+              <span class="old-price">126.69€</span> 
+              <span class="current-price">101.35€</span>
+            </div>
+
+            <div class="seller-info">
+              <div class="seller-avatar">
+                <img src="img/check.png" alt="Vendedor verificado" class="verified-icon">
+              </div>
+              <div class="seller-details">
+                <div class="rating">
                   <div class="stars">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
                   </div>
+                  <span class="rating-text">5.0</span>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-2 mb-4 p-0">
-                <div class="favorite">
-                  <img src="icons/ico-favorite-21.svg" alt="" width="20" height="20" class="img-responsive">
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <div class="comment">
-                <div class="col-md-1 avatar">
-                  <img src="img/check.png" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-10 text-left">
-                  <a href=""><div class="name">Descripcion</div></a>
-                  <br>
-                  <p class="description">Descubre la fusión perfecta entre la 
-                    moda más actual y la elegancia atemporal en nuestra colección femenina.</p>
-                </div> 
-              <div class="row">
-                <div class="col-md-12">
-                  <br>
-                  <a class="pull-right all-view">Ver todos</a>
-                </div>
+              <div class="favorite-btn">
+                <button class="btn-favorite" aria-label="Agregar a favoritos">
+                  <img src="icons/ico-favorite-21.svg" alt="Favorito" width="20" height="20">
+                </button>
               </div>
             </div>
+            
+            <div class="product-description">
+              <div class="description-header">
+                <img src="img/check.png" alt="Descripción" class="description-icon">
+                <span class="description-title">Descripción</span>
+              </div>
+              <p class="description-text">
+                Descubre la fusión perfecta entre la moda más actual y la elegancia atemporal en nuestra colección.
+              </p>
+              <a href="#" class="view-all-link">Ver todos los detalles</a>
+            </div>
 
-            <div class="row mb-4 mt-4 send-comment" >
-              <div class="col-md-7 col-md-offset-1 col-xs-6 col-xs-offset-1 p-0">
-                
-              </div>
-              <div class="col-md-3 p-0">
-                
-              </div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-block">Comprar Ahora</button>
             </div>
           </div>
         </div>
@@ -822,77 +808,64 @@
   _____________________________________________ -->
 
 
-      <div class="col-md-4 col-xs-12 col-lg-3">
-        <div class="card">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card product-card">
           <div class="card-header">
-            <img src="img/moschino1.jpg" alt="" class="img-responsive">
-            <div class="mark">Carteras y bolsos</div>
+            <div class="product-image-container">
+              <img src="img/moschino1.jpg" alt="Cartera Moschino" class="product-image">
+              <div class="product-badge">Carteras y Bolsos</div>
+            </div>
           </div>
           <div class="card-body">
-            <div class="card-title">Cartera </div>
-            <div class="talla">Moschino</div>
-            <div class="category">
-              <a href="">
-                y muchas otras marcas
-              </a>
+            <div class="product-info">
+              <h3 class="card-title">Cartera Moschino</h3>
+              <div class="product-details">
+                <span class="brand">Moschino</span>
+                <span class="more-brands">y muchas otras marcas</span>
+              </div>
             </div>
 
-            <div class="price">
-              <span class="troke">132€</span> <span class="real">105.60€</span>
+            <div class="price-section">
+              <span class="old-price">132€</span> 
+              <span class="current-price">105.60€</span>
             </div>
-            <div class="propetary">
-              <div class="col-md-2 avatar mb-4">  
-                  <img src="img/check.png" alt="" class="img-responsive">
+
+            <div class="seller-info">
+              <div class="seller-avatar">
+                <img src="img/check.png" alt="Vendedor verificado" class="verified-icon">
               </div>
-              <div class="col-md-8 col-sm-8 mb-4">
-                <div class="info">
-                 <a href="#">
-                  <div class="name">
-                    
-                  </div>
-                  </a>
+              <div class="seller-details">
+                <div class="rating">
                   <div class="stars">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
-                    <img src="img/start.png" alt="">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
                   </div>
+                  <span class="rating-text">5.0</span>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-2 mb-4 p-0">
-                <div class="favorite">
-                  <img src="icons/ico-favorite-21.svg" alt="" width="20" height="20" class="img-responsive">
-                </div>
-              </div>
-
-            </div>
-            <hr>
-            <div class="comment">
-                <div class="col-md-1 avatar">
-                  <img src="img/check.png" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-10 text-left">
-                  <a href=""><div class="name">Descripcion</div></a>
-                  <br>
-                  <p class="description">Explora nuestra exclusiva colección 
-                    de bolsos diseñados para damas y caballeros, perfectos para cualquier ocasión. </p>
-                </div> 
-              <div class="row">
-                <div class="col-md-12">
-                  <br>
-                  <a class="pull-right all-view">Ver todos</a>
-                </div>
+              <div class="favorite-btn">
+                <button class="btn-favorite" aria-label="Agregar a favoritos">
+                  <img src="icons/ico-favorite-21.svg" alt="Favorito" width="20" height="20">
+                </button>
               </div>
             </div>
+            
+            <div class="product-description">
+              <div class="description-header">
+                <img src="img/check.png" alt="Descripción" class="description-icon">
+                <span class="description-title">Descripción</span>
+              </div>
+              <p class="description-text">
+                Explora nuestra exclusiva colección de bolsos diseñados para damas y caballeros, perfectos para cualquier ocasión.
+              </p>
+              <a href="#" class="view-all-link">Ver todos los detalles</a>
+            </div>
 
-            <div class="row mb-4 mt-4 send-comment" >
-              <div class="col-md-7 col-md-offset-1 col-xs-6 col-xs-offset-1 p-0">
-                
-              </div>
-              <div class="col-md-3 p-0">
-                
-              </div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-block">Comprar Ahora</button>
             </div>
           </div>
         </div>
@@ -922,120 +895,141 @@
     </div>
   </div>
 
-  <div class="container-fluid services">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <h2 class="title-services">Estamos orgullosos de dar un servicio de calidad</h2>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img src="img/ico-compra.png" alt="">
-        <p class="subtitle-services">Compra Facilmente</p>
-        <p class="content-service">
-          En MundoJuan, tu seguridad al realizar compras es nuestra prioridad. 
-          Con respaldo de nuestra amplia experiencia, ofrecemos la garantía 
-          necesaria para que te sientas tranquilo. Explora un espacio donde 
-          la confianza y la facilidad se unen. Además, nos complace informarte 
-          que realizamos envíos a toda España y Venezuela con nuestro servicio 
-          puerta a puerta, ¡totalmente GRATIS! (aplican condiciones) 
-          Descubre una experiencia de compra segura y conveniente con MundoJuan.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/ico-garantia.png" alt="">
-        <p class="subtitle-services">Transacciones Seguras</p>
-        <p class="content-service"> En MundoJuan, tus compras están respaldadas. 
-          Ofrecemos una garantía de 6 meses en productos informáticos y móviles,
-           además de brindar soporte y atención constante para calzado, ropa, 
-           carteras y bolsos. Mantenemos una comunicación constante para asegurar 
-           tu satisfacción. Confía en MundoJuan para una experiencia de compra con 
-           respaldo y calidad.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <img src="img/ico-soporte.png" alt="">
-        <p class="subtitle-services">Asistencia 24/7</p>
-        <p class="content-service">
-          Experimenta la tranquilidad de la asistencia continua con MundoJuan. 
-          Nuestro equipo está disponible las 24 horas, los 7 días de la semana,
-           para brindarte apoyo en cada paso. En MundoJuan, estamos comprometidos
-            a proporcionar ayuda constante, asegurando una experiencia de compra 
-            sin preocupaciones en cualquier momento del día o de la noche.
-        </p>
-      </div>
-    </div>
-    <br>
-    <br>
-
-  <footer>
+  <section class="services-section">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
-            <p class="description">
-             En MundoJuan encontraras todo lo que estabas buscando, tanto nuevo como usado
-             con una garantia superior a lo que ofrece cualquier vendedor informal; recuerda que 
-             cuentas con nosotros con nuestro sistema de soporte 24/7 si tienes dudas o algun inconveniente.
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="services-header">
+            <h2 class="title-services">Estamos orgullosos de dar un servicio de calidad</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row services-grid">
+        <div class="col-xs-12 col-sm-12 col-md-4 service-item">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="img/ico-compra.png" alt="Compra Fácilmente" class="service-image">
+            </div>
+            <h3 class="subtitle-services">Compra Fácilmente</h3>
+            <p class="content-service">
+              En MundoJuan, tu seguridad al realizar compras es nuestra prioridad. 
+              Con respaldo de nuestra amplia experiencia, ofrecemos la garantía 
+              necesaria para que te sientas tranquilo. Explora un espacio donde 
+              la confianza y la facilidad se unen. Además, nos complace informarte 
+              que realizamos envíos a toda España y Venezuela con nuestro servicio 
+              puerta a puerta, ¡totalmente GRATIS! (aplican condiciones) 
+              Descubre una experiencia de compra segura y conveniente con MundoJuan.
             </p>
-            <div class="redes">
-                <img src="icons/ico-facebook-07.svg" alt="" width="40" height="40">
-                <img src="icons/ico-twitter-08.svg" alt="" width="40" height="40">
-            </div>
-        </div>
-        <div class="col-md-3 text-center">
-          <p class="desc-app subtitle">Descarga la App</p>
-          <div class="row ">
-            <div class="col-md-6 col-xs-6  text-right apps">
-              <img src="img/googleplay.png" alt="">
-            </div>
-            <div class="col-md-6 col-xs-6 text-left apps">
-              <img src="img/apple-store.png" alt="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12"><br>
-              <img src="img/tarjetabientes.png" alt="">
-            </div>
           </div>
         </div>
-        <div class="col-md-3 col-xs-12 icons">
-          <div class="row ">
-            <div class="col-md-4 col-xs-4 text-center">
-              <img src="icons/ico-products-12.svg" alt="">
-              <p>38</p>
-              <p class="serv">Productos</p>
+        <div class="col-xs-12 col-sm-12 col-md-4 service-item">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="img/ico-garantia.png" alt="Transacciones Seguras" class="service-image">
             </div>
-            <div class="col-md-4 col-xs-4  text-center">
-              <img src="icons/ico-miembros-13.svg" alt="">
-              <p>34</p>
-              <p class="serv">Miembros</p>
+            <h3 class="subtitle-services">Transacciones Seguras</h3>
+            <p class="content-service">
+              En MundoJuan, tus compras están respaldadas. 
+              Ofrecemos una garantía de 6 meses en productos informáticos y móviles,
+              además de brindar soporte y atención constante para calzado, ropa, 
+              carteras y bolsos. Mantenemos una comunicación constante para asegurar 
+              tu satisfacción. Confía en MundoJuan para una experiencia de compra con 
+              respaldo y calidad.
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 service-item">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="img/ico-soporte.png" alt="Asistencia 24/7" class="service-image">
             </div>
-            <div class="col-md-4 col-xs-4  text-center">
-              <img src="icons/ico-ventas-14.svg" alt="">
-              <p>47</p>
-              <p class="serv">Ventas</p>
+            <h3 class="subtitle-services">Asistencia 24/7</h3>
+            <p class="content-service">
+              Experimenta la tranquilidad de la asistencia continua con MundoJuan. 
+              Nuestro equipo está disponible las 24 horas, los 7 días de la semana,
+              para brindarte apoyo en cada paso. En MundoJuan, estamos comprometidos
+              a proporcionar ayuda constante, asegurando una experiencia de compra 
+              sin preocupaciones en cualquier momento del día o de la noche.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container-fluid">
+      <div class="row footer-content">
+        <div class="col-xs-12 col-sm-12 col-md-3 footer-section">
+          <div class="footer-brand">
+            <h3 class="footer-title">MundoJuan</h3>
+            <p class="description">
+              En MundoJuan encontrarás todo lo que estabas buscando, tanto nuevo como usado
+              con una garantía superior a lo que ofrece cualquier vendedor informal; recuerda que 
+              cuentas con nosotros con nuestro sistema de soporte 24/7 si tienes dudas o algún inconveniente.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <img src="icons/ico-facebook-07.svg" alt="Facebook" width="40" height="40">
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <img src="icons/ico-twitter-08.svg" alt="Twitter" width="40" height="40">
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 hidden-sm" style="padding-left: 40px;">
-          <p class="subtitle help">Ayuda y Faqs</p>
-          <ul class="list">
-            <li>
-              <a>Quienes somos</a>
-            </li>
-            <li>
-              <a>Preguntas Frecuentes</a>
-            </li>
-            <li>
-              <a>Normas de la comunidad</a>
-            </li>
-            <li>
-              <a>Políticas de Privacidad</a>
-            </li>
-            <li>
-              <a>Términos y condiciones</a>
-            </li>
-          </ul>
+        
+        <div class="col-xs-12 col-sm-12 col-md-3 footer-section">
+          <div class="footer-apps">
+            <h4 class="footer-subtitle">Descarga la App</h4>
+            <div class="app-downloads">
+              <a href="#" class="app-link">
+                <img src="img/googleplay.png" alt="Descargar en Google Play" class="app-image">
+              </a>
+              <a href="#" class="app-link">
+                <img src="img/apple-store.png" alt="Descargar en App Store" class="app-image">
+              </a>
+            </div>
+            <div class="payment-methods">
+              <img src="img/tarjetabientes.png" alt="Métodos de pago aceptados" class="payment-image">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-3 footer-section">
+          <div class="footer-stats">
+            <h4 class="footer-subtitle">Nuestros Números</h4>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <img src="icons/ico-products-12.svg" alt="Productos" class="stat-icon">
+                <span class="stat-number">38</span>
+                <span class="stat-label">Productos</span>
+              </div>
+              <div class="stat-item">
+                <img src="icons/ico-miembros-13.svg" alt="Miembros" class="stat-icon">
+                <span class="stat-number">34</span>
+                <span class="stat-label">Miembros</span>
+              </div>
+              <div class="stat-item">
+                <img src="icons/ico-ventas-14.svg" alt="Ventas" class="stat-icon">
+                <span class="stat-number">47</span>
+                <span class="stat-label">Ventas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-3 footer-section">
+          <div class="footer-help">
+            <h4 class="footer-subtitle">Ayuda y FAQs</h4>
+            <ul class="help-links">
+              <li><a href="#" class="help-link">Quiénes somos</a></li>
+              <li><a href="#" class="help-link">Preguntas Frecuentes</a></li>
+              <li><a href="#" class="help-link">Normas de la comunidad</a></li>
+              <li><a href="#" class="help-link">Políticas de Privacidad</a></li>
+              <li><a href="#" class="help-link">Términos y condiciones</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

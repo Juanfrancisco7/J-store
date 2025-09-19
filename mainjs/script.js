@@ -1,7 +1,5 @@
-// Mostrar mensaje de donación al inicio
-if (!sessionStorage.getItem('donationMessageShown')) {
-  mostrarMensajeDonacion();
-}
+// Mostrar mensaje de donación al inicio (siempre)
+mostrarMensajeDonacion();
 
 function mostrarMensajeDonacion() {
   // Crear el overlay de fondo
@@ -70,8 +68,7 @@ function mostrarMensajeDonacion() {
     cerrarMensajeDonacion();
   });
 
-  // Marcar que el mensaje ha sido mostrado en esta sesión
-  sessionStorage.setItem('donationMessageShown', 'true');
+  // El mensaje aparecerá cada vez que se cargue la página
 }
 
 document.addEventListener("DOMContentLoaded", function () {
